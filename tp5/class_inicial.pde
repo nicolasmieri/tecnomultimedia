@@ -266,15 +266,11 @@ if (Estado==0) {
       if (reiniciar == true) {
         Player.rewind();
         Estado=0;
-        auto[0].posX = 800;
-        auto[1].posX = 800;  
-        auto[2].posX = 800;
-        auto[3].posX = 800;
-        auto[4].posX = 800;
-        auto[5].posX = 800;
-        auto[6].posX = 800;
-        auto[7].posX = 800;
-        auto[8].posX = 800;
+         
+          for(int x=0;x<9;x+=1){
+          auto[x].posX = 800;
+        }       
+         
         moto.posX = -160;
         clicked = false;
       }
